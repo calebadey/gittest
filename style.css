@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(./flowerwhite.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background: rgb(0, 100, 0);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style-type: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;color: #fff;
+}
+.active{
+    background-color: lightgreen;
+    border-radius: 7px;
+    padding: 10px;
+}
+.menu-bar ul li:hover{
+    background-color: lightgreen;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 li{
+    border-bottom: 1px solid greenyellow;
+    text-align: justify;
+}
+.menu-bar ul li:hover .sub-menu-1 li:last-of-type{
+    border: none;
+}
+.sub-menu-2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li{
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid greenyellow;
+}
+.menu-bar ul li:hover .sub-menu-2 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li .sub-menu-2 ul li:nth-of-type(3) span{
+    float: right;
+}
+.menu-bar ul li .sub-menu-2 ul li:last-child span{
+    float: right;
+}
+.mini-sub-menu{
+    display: none;
+}
+.hover-me:hover .mini-sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 10px;
+    background: rgb(0, 100, 0);
+}
